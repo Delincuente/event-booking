@@ -1,0 +1,12 @@
+EventHub | Full-Stack Event Booking System
+- Developed a robust event management platform using React, Node.js, Express, and MySQL, enabling users to seamlessly browse, manage, and book event tickets.
+- Engineered a secure Role-Based Access Control (RBAC) architecture utilizing JWT and BcryptJS, isolating Admin dashboards (for CRUD event operations) from User portals (for viewing and booking).
+- Implemented precise inventory tracking and validation logic within the RESTful API to enforce strict limits on ticket availability, effectively preventing race conditions and overbooking.
+- Designed and optimized relational database schemas utilizing Sequelize ORM to manage complex associations between Users, Events, and Bookings, ensuring data integrity and rapid query execution.
+
+---
+
+Bonus: Advanced Features to Add/Mention (for interviews):
+1. Database Transactions (ACID Compliance): Using transactions when a user books a ticket to ensure the ticket decrement and booking creation succeed or fail together, preventing data corruption.
+2. Redis Caching: Caching the GET events endpoint to reduce database load and speed up response times for high-read operations.
+3. Idempotency Keys: Implementing idempotency in payment or booking endpoints to ensure duplicate button clicks don't result in double bookings.

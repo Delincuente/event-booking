@@ -1,0 +1,21 @@
+Requirements & Logic
+
+Roles
+    Admin Can create, edit, view and delete events (title, date, total tickets).
+    User Can view events and took tickets.
+
+Backend (Node Express Sequelize/MySQL)
+
+Logic
+    When a User books tickets reduce availabletickets.
+    Prevent overbooking using simple check:
+
+Frontend (React)
+    Login/Register Page (separate role: Admin/User).
+    Admin Panel Form to create events.
+    User Dashboard show event List with "Bock" button.
+    When tickets are booked show confirmation.
+    Show "Sold Out" Label if no tickets remain.
+
+Bonus (if time left)
+    Add iddleware for role-based access (Allmin vs User).
